@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaLinkedin, FaInstagram, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaEnvelope, FaGithub } from 'react-icons/fa';
 import myImage from '../images/my_image.png'; // Import your image
 import '../index.css';
 
@@ -36,6 +36,9 @@ const MainPage = () => {
             <a href="https://www.instagram.com/your-instagram" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="text-white hover:text-pink-400" size={30} />
             </a>
+            <a href="https://www.instagram.com/your-instagram" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="text-white hover:text-black" size={30} />
+            </a>
           </div>
         </div>
 
@@ -44,7 +47,7 @@ const MainPage = () => {
           <img
             src={myImage}
             alt="Kishore"
-            className="w-80 h-80 object-cover rounded-full mx-auto animate-glow"
+            className="w-80 h-80 object-cover rounded-full mx-auto animate-glow mt-10 lg:mt-1"
           />
         </div>
       </div>

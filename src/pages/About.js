@@ -10,7 +10,7 @@ const AboutPage = () => {
         <div className="w-full text-center md:text-left text-white flex flex-row items-start justify-evenly flex-wrap scroll-ml-10">
           {/* Name */}
           {/* Educational Details */}
-          <div className='flex flex-col justify-center items-center'>
+          <div className='flex flex-col justify-center items-center mt-10 md:mt-1'>
             <h2 className="text-3xl font-semibold mb-2 text-blue-500">Education</h2>
             <div className="text-lg mb-4 flex flex-col items-start">
               <h3>B.E in Information Technology,</h3>
@@ -20,7 +20,7 @@ const AboutPage = () => {
           </div>
 
           {/* Work Experience */}
-          <div className='flex flex-col items-center justify-center'>
+          <div className='flex flex-col items-center justify-center  mt-10 md:mt-1'>
             <h2 className="text-3xl font-semibold mb-2 text-blue-500">Work Experience</h2>
             <div className="text-lg mb-4 flex flex-col items-start">
               <h2 className='text-2xl'>Title :</h2>
@@ -35,8 +35,8 @@ const AboutPage = () => {
             </div>
           </div>
           {/* WhatsApp Contact Button */}
-          <a href="https://wa.me/+916238418876" target="_blank" rel="noopener noreferrer">
-            <button className="bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600 focus:outline-none flex items-center space-x-2">
+          <a href="https://wa.me/+916238418876" target="_blank" rel="noopener noreferrer  mt-10  md:mt-1">
+            <button className="bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600 focus:outline-none flex items-center space-x-2 mt-10  md:mt-1">
               <FaWhatsapp size={20} />
               <span>Contact Me on WhatsApp</span>
             </button>

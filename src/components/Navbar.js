@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,50 +10,42 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 p-3"> 
-      <div className="container mx-auto flex justify-center items-center">
-        {/* Flex container to center everything */}
-        <div className="flex items-center justify-between w-full">
-          <div className="text-white text-lg">My Portfolio</div>
-          <button
-            onClick={toggleMenu}
-            className="text-white md:hidden focus:outline-none"
-          >
-            {/* Hamburger Icon */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-          </button>
+    <nav className="bg-gray-900 text-white p-4 pt-6">
+      <div className="container mx-auto flex items-center justify-between">
+        {/* Title */}
+        <div className="text-2xl font-bold">
+          <Link to="/">KISHORE</Link>
         </div>
 
-        <ul
-          className={`flex flex-col md:flex-row md:items-center md:space-x-6 mt-2 md:mt-0 ${
-            isOpen ? 'block' : 'hidden md:flex'
-          }`}
-        >
-          <li className="py-1">
-            <Link to="/" className="text-white hover:text-blue-300">Home</Link>
-          </li>
-          <li className="py-1">
-            <Link to="/about" className="text-white hover:text-blue-300">About</Link>
-          </li>
-          <li className="py-1">
-            <Link to="/resume" className="text-white hover:text-blue-300">Resume</Link>
-          </li>
-          <li className="py-1">
-            <Link to="/projects" className="text-white hover:text-blue-300">Projects</Link>
-          </li>
-          <li className="py-1">
-            <Link to="/contact" className="text-white hover:text-blue-300">Contact</Link>
-          </li>
-        </ul>
+        {/* Desktop Links */}
+        <div className="hidden md:flex md:items-center md:space-x-6 text-2xl">
+          <Link to="/" className="text-lg hover:text-blue-400 transition-colors">Home</Link>
+          <Link to="/about" className="text-lg hover:text-blue-400 transition-colors">About</Link>
+          <Link to="/skills" className="text-lg hover:text-blue-400 transition-colors">Skills</Link>
+          <Link to="/projects" className="text-lg hover:text-blue-400 transition-colors">Projects</Link>
+          <Link to="/resume" className="text-lg hover:text-blue-400 transition-colors">Resume</Link>
+          <Link to="/contact" className="text-lg hover:text-blue-400 transition-colors">Contact</Link>
+        </div>
+
+        {/* Hamburger Icon for Mobile */}
+        <div className="md:hidden ml-auto">
+          <button onClick={toggleMenu} aria-label="Toggle menu">
+            {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          </button>
+        </div>
       </div>
+
+      {/* Mobile Links - Display Below Toggle Button */}
+      {isOpen && (
+        <div className="flex flex-col items-end pr-6 mt-4 pl-4 space-y-2 md:hidden">
+          <Link to="/" onClick={toggleMenu} className="text-lg hover:text-blue-400 transition-colors">Home</Link>
+          <Link to="/about" onClick={toggleMenu} className="text-lg hover:text-blue-400 transition-colors">About</Link>
+          <Link to="/skills" onClick={toggleMenu} className="text-lg hover:text-blue-400 transition-colors">Skills</Link>
+          <Link to="/projects" onClick={toggleMenu} className="text-lg hover:text-blue-400 transition-colors">Projects</Link>
+          <Link to="/resume" onClick={toggleMenu} className="text-lg hover:text-blue-400 transition-colors">Resume</Link>
+          <Link to="/contact" onClick={toggleMenu} className="text-lg hover:text-blue-400 transition-colors">Contact</Link>
+        </div>
+      )}
     </nav>
   );
 };
