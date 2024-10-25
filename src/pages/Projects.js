@@ -11,28 +11,28 @@ const projects = [
     title: 'DreamikAI Website',
     description: 'It is Ecommerce site that I Worked On my Internship for a Stationary Shop',
     tools: 'HTML , CSS , Javascript , AWS S3 , API , VSCode , Git , Figma',
-    gitlink:'https://github.com/KISHORE0459/calculator.git',
+    gitlink:'https://github.com/KISHORE0459/DreamikAI.git',
     image: dreamik, 
   },
   {
     title: 'Quiz App',
     description: 'It is a Simple Quiz app that have some questuions and answers stored in it and ask the users questions and Evaluate it',
     tools: 'HTML , CSS , Javascript , Node JS',
-    gitlink:'https://github.com/KISHORE0459/calculator.git',
+    gitlink:'https://github.com/KISHORE0459/quiz_app.git',
     image: quiz,
   },
   {
     title: 'PortFolio',
     description: 'It is a Simple Portfolio website',
     tools: 'HTML , CSS , Javascript , VSCode , Git',
-    gitlink:'https://github.com/KISHORE0459/calculator.git',
+    gitlink:'https://github.com/KISHORE0459/portfolio.git',
     image: portfolio, 
   },
   {
     title: 'Image Merger',
     description: 'In this I merge Two Separate Images Into a Single Image And Download and Modify it',
     tools: 'HTML , CSS , JavaScript , JSPdf , HTML2Canvas , VSCode , Git',
-    gitlink:'https://github.com/KISHORE0459/calculator.git',
+    gitlink:'https://github.com/KISHORE0459/imagemerger.git',
     image: merger,
   },
   {
@@ -50,7 +50,7 @@ const Projects = () => {
       <h1 className="text-4xl font-bold text-white mb-6">My Projects</h1>
       <div className="flex flex-row flex-wrap justify-evenly items-center">
         {projects.map((project, index) => (
-          <div className="flex flex-col justify-center items-center w-80 h-80 rounded-lg overflow-hidden shadow-lg bg-white transition-transform duration-300 transform hover:scale-105 m-10">
+          <div className="flex flex-col justify-center items-center w-80 h-90 rounded-lg overflow-hidden shadow-lg bg-white transition-transform duration-300 transform hover:scale-105 m-10">
             <div
               key={index}
               className="flex flex-col justify-center items-center relative group w-80 h-72 rounded-lg overflow-hidden shadow-lg bg-white transition-transform duration-300 transform hover:scale-105 m-10"
@@ -69,9 +69,9 @@ const Projects = () => {
             </div>
             <div>
               <h2 className="text-xl font-bold mb-2">{project.title}</h2>
-              <a href={project.gitlink} target="_blank" rel="noopener noreferrer" className='flex flex-row'>
+              <a href={project.gitlink} target="_blank" rel="noopener noreferrer" className='flex flex-row m-4 hover:text-blue-400'>
                   <FaGithub className="text-black hover:text-black" size={30} />
-                  <h3>Git Link</h3>
+                  <h3 className='ml-2'>Git Link</h3>
               </a>
             </div>
           </div>

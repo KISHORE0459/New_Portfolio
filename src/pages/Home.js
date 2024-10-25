@@ -23,20 +23,20 @@ const MainPage = () => {
           {/* Social Icons */}
           <div className="flex justify-center md:justify-start space-x-6 mt-4">
             {/* LinkedIn */}
-            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/kishoreb26" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="text-white hover:text-blue-400" size={30} />
             </a>
 
             {/* Gmail */}
-            <a href="mailto:your-email@gmail.com">
+            <a href="mailto:kishorebabu200409@gmail.com">
               <FaEnvelope className="text-white hover:text-red-400" size={30} />
             </a>
 
             {/* Instagram */}
-            <a href="https://www.instagram.com/your-instagram" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/lonely_wolf.k?igsh=azhkeXVzYTJ6MXdy" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="text-white hover:text-pink-400" size={30} />
             </a>
-            <a href="https://www.instagram.com/your-instagram" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/KISHORE0459" target="_blank" rel="noopener noreferrer">
               <FaGithub className="text-white hover:text-black" size={30} />
             </a>
           </div>

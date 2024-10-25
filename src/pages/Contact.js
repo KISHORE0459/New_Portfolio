@@ -49,25 +49,25 @@ const ContactPage = () => {
           <h2 className="text-2xl font-bold mb-4">Connect with Me</h2>
           <div className="flex flex-col justify-center items-start text-gray-700 text-2xl">
             <div className='flex flex-row justify-center items-center mb-5'>
-              <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">
+              <a href="https://www.linkedin.com/in/kishoreb26" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">
                 <FaLinkedin />
               </a>
               <h3 className='ml-5'>linkedin</h3>
             </div>
             <div className='flex flex-row justify-center items-center mb-5'>
-              <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
+              <a href="https://www.instagram.com/lonely_wolf.k?igsh=azhkeXVzYTJ6MXdy" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
                 <FaInstagram />
               </a>
               <h3 className='ml-5'>Instagram</h3>
             </div>
             <div className='flex flex-row justify-center items-center mb-5'>
-              <a href="mailto:your-email@example.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
+              <a href="mailto:kishorebabu200409@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
                 <FaEnvelope />
               </a>
               <h3 className='ml-5'>Gmail</h3>
             </div>
             <div className='flex flex-row justify-center items-center mb-5'>
-              <a href="https://wa.me/your-whatsapp-number" target="_blank" rel="noopener noreferrer" className="hover:text-green-500">
+              <a href="https://wa.me/+916238418876" target="_blank" rel="noopener noreferrer" className="hover:text-green-500">
                 <FaWhatsapp />
               </a>
               <h3 className='ml-5'>whatsapp</h3>
